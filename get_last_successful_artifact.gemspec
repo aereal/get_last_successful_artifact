@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["aereal"]
   spec.email         = ["aereal@aereal.org"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Get last successful artifact URI from Jenkins}
+  spec.description   = %q{Get last successful artifact URI from Jenkins}
+  spec.homepage      = "https://github.com/aereal/get_last_successful_artifact"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "jenkins_api_client"
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
 end
